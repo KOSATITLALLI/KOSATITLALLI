@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <title>KOSATITLALLI</title>
+</head>
+<body>
+    
+<section class="bg">
+<h2>KOSATITLALLI</h2>
+<span class="SkewedOne"></span>
+<span class="SkewedTwo"></span>
+</section>
+
+
+<section>
+
+    <div class="cards-grid">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url('./img1/pradera.jpg');">
+  
+        </div>
+        <div class="flip-card-back">
+         
+        <a href="medioambiente.html">  Medio Ambiente. </a>
+        </div>
+        </div>
+        </div>
+  
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url('./img/ind1.jpg');">
+          
+    </div>
+        <div class="flip-card-back">
+        
+        <a href="CambioClimatico.html">Cambio Climático.</a> <br>
+        <a href="CalentamientoGlobal.html">Calentamiento Global.</a> <br>
+        <a href="EventosCL.html">Eventos Climáticos Compuestos.</a> <br>
+        <a href="HuellasAmbientales.html">Huellas Ambientales.</a> <br>
+        </div>
+        </div>
+        </div>
+  
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url('./img/reciclaje1.jpg');">
+  
+        </div>
+        <div class="flip-card-back">
+        <a href="Reciclaje.html">Reciclaje y su Importancia.</a> <br>
+        <a href="Acciones.html">Acciones Mundiales.</a> <br>
+        <a href="ObjetivosDesarollo.html">Objetivos de Desarrollo Sostenible.</a> <br>
+   
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+    
+        <span class="copyright">Derechos Reservados &copy; KOSATITLALLI 2022</span>
+    </footer>
+
+</section>
+
+<script>
+    const SkewedOne = document.querySelector('.SkewedOne');
+    const SkewedTwo= document.querySelector('.SkewedTwo');
+    window.addEventListener('scroll',function(){
+        const value1 = -12 + window.scrollY/42;
+        const value2 = 12 + window.scrollY/-42;
+        SkewedOne.style.transform = "skewY("+ value1 +"deg)";
+        SkewedTwo.style.transform = "skewY("+ value2 +"deg)";
+    })
+</script>
+</body>
+</html>
